@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI Dashboard User Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        nav {
+            flex: 0 0 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav li {
+            margin-bottom: 8px;
+        }
+        
+        nav a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #f0f0f0;
+            color: #667eea;
+            padding-left: 16px;
+        }
+        
+        main {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .feature-box {
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #2e7d32;
+        }
+        
+        .warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #e65100;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            nav {
+                flex: none;
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BI Dashboard User Guide</h1>
+        <p>Complete guide to using your business intelligence dashboard</p>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <nav>
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#dashboard-overview">Dashboard Overview</a></li>
+                    <li><a href="#key-features">Key Features</a></li>
+                    <li><a href="#navigation">Navigation Guide</a></li>
+                    <li><a href="#filters">Using Filters</a></li>
+                    <li><a href="#tips">Tips & Tricks</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Welcome to your Business Intelligence Dashboard. This guide will help you understand and effectively use all the features available to analyze your data and make informed decisions.</p>
+                    <p>The dashboard provides real-time insights into your business metrics, allowing you to monitor performance, identify trends, and track KPIs across your organization.</p>
+                </section>
+                
+                <section id="getting-started">
+                    <h2>Getting Started</h2>
+                    <h3>Logging In</h3>
+                    <ol>
+                        <li>Navigate to the dashboard URL provided by your administrator</li>
+                        <li>Enter your username and password</li>
+                        <li>Click "Sign In"</li>
+                        <li>You will be directed to your personalized dashboard</li>
+                    </ol>
+                    
+                    <div class="tip">
+                        <strong>Tip:</strong> Save the dashboard URL to your bookmarks for quick access.
+                    </div>
+                </section>
+                
+                <section id="dashboard-overview">
+                    <h2>Dashboard Overview</h2>
+                    <p>Your dashboard contains several key components:</p>
+                    
+                    <div class="feature-box">
+                        <h3>Main Metrics</h3>
+                        <p>Large numerical displays showing your most important KPIs at a glance.</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <h3>Charts & Visualizations</h3>
+                        <p>Interactive graphs, bar charts, line charts, and other visual representations of your data.</p>
+                    </div>
+                    
+                    <div class="feature-box">
+                        <h3>Data Tables</h3>
+                        <p>Detailed data views that can be sorted, filtered, and exported for further analysis.</p>
+                    </div>
+                </section>
+                
+                <section id="key-features">
+                    <h2>Key Features</h2>
+                    
+                    <h3>Real-Time Data Updates</h3>
+                    <p>Your dashboard updates automatically to reflect the latest data from your systems.</p>
+                    
+                    <h3>Interactive Charts</h3>
+                    <p>Click on chart elements to drill down into specific data points and explore details.</p>
+                    
+                    <h3>Custom Reports</h3>
+                    <p>Generate and download custom reports tailored to your specific needs.</p>
+                    
+                    <h3>Data Export</h3>
+                    <p>Export data in multiple formats including CSV, Excel, and PDF.</p>
+                    
+                    <h3>Scheduled Alerts</h3>
+                    <p>Receive notifications when metrics exceed thresholds you've defined.</p>
+                </section>
+                
+                <section id="navigation">
+                    <h2>Navigation Guide</h2>
+                    
+                    <h3>Top Menu Bar</h3>
+                    <p>The top navigation contains links to main dashboard sections:</p>
+                    <ul>
+                        <li><strong>Home:</strong> Returns to your main dashboard</li>
+                        <li><strong>Reports:</strong> Access pre-built and custom reports</li>
+                        <li><strong>Analytics:</strong> Advanced analysis tools</li>
+                        <li><strong>Settings:</strong> Manage your preferences and account</li>
+                    </ul>
+                    
+                    <h3>Left Sidebar</h3>
+                    <p>Quick access to frequently used sections and bookmarked reports.</p>
+                    
+                    <h3>Breadcrumb Navigation</h3>
+                    <p>Shows your current location within the dashboard. Click any breadcrumb to go back to a previous section.</p>
+                </section>
+                
+                <section id="filters">
+                    <h2>Using Filters</h2>
+                    <p>Filters help you focus on specific data subsets. Most dashboard elements support filtering.</p>
+                    
+                    <h3>Applying Filters</h3>
+                    <ol>
+                        <li>Click the Filter button on any dashboard element</li>
+                        <li>Select your filter criteria</li>
+                        <li>Click "Apply" to update the visualization</li>
+                    </ol>
+                    
+                    <h3>Common Filters</h3>
+                    <table>
+                        <tr>
+                            <th>Filter Type</th>
+                            <th>Use Case</th>
+                        </tr>
+                        <tr>
+                            <td>Date Range</td>
+                            <td>Select specific time periods for analysis</td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td>View data for specific departments</td>
+                        </tr>
+                        <tr>
+                            <td>Region</td>
+                            <td>Focus on particular geographic areas</td>
+                        </tr>
+                        <tr>
+                            <td>Product Category</td>
+                            <td>Analyze specific product lines</td>
+                        </tr>
+                    </table>
+                    
+                    <div class="warning">
+                        <strong>Note:</strong> Some filters may take a few seconds to apply when dealing with large datasets.
+                    </div>
+                </section>
+                
+                <section id="tips">
+                    <h2>Tips & Tricks</h2>
+                    <ul>
+                        <li>Use keyboard shortcuts (Ctrl+F) to search for specific elements on the dashboard</li>
+                        <li>Hover over chart bars or data points for additional details</li>
+                        <li>Combine multiple filters for more targeted analysis</li>
+                        <li>Set up scheduled email reports to receive updates automatically</li>
+                        <li>Use the comparison feature to analyze trends year-over-year</li>
+                        <li>Bookmark frequently viewed reports for quick access</li>
+                    </ul>
+                </section>
+                
+                <section id="faq">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <h3>Q: Why is my data not updating?</h3>
+                    <p>A: Try refreshing your browser (F5). If the issue persists, check with your administrator to ensure data sources are connected properly.</p>
+                    
+                    <h3>Q: Can I share my dashboard with colleagues?</h3>
+                    <p>A: Yes, use the Share button to generate a link or send reports directly via email. Check your access permissions with your administrator.</p>
+                    
+                    <h3>Q: How far back does the historical data go?</h3>
+                    <p>A: Historical data retention depends on your organization's settings. Contact your administrator for specific details.</p>
+                    
+                    <h3>Q: Can I customize the dashboard layout?</h3>
+                    <p>A: Yes, click the Edit button to rearrange widgets and customize your view. Changes are saved automatically.</p>
+                    
+                    <h3>Q: What should I do if I encounter an error?</h3>
+                    <p>A: Take note of the error message and contact your support team. Provide details about what you were doing when the error occurred.</p>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 BI Dashboard User Guide. For support, contact your administrator.</p>
+    </footer>
+</body>
+</html>
